@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+ <mapper namespace="com.foxhis.itf.vod.mapper.IVod_GrdMapper">        
+      
+    <select id="getVodByChanged" resultType = "vod_grd" timeout = "5">    
+      select * from vod_grd where changed = 'F'
+    </select>
+    
+    <update id="updateVodChanged" parameterType = "String" timeout="5">    
+      update vod_grd set changed=#{changed} where roomno=#{roomno}
+    </update>
+ </mapper>

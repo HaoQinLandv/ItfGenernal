@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+ <mapper namespace="com.foxhis.itf.police.mapper.IIdScanMapper"> 
+            
+     <!-- 插入   -->   
+    <insert id="insertIdScan" parameterType="IdScan" timeout="5">    
+      insert into idscan
+             (no,idtype,idpic,name,date1,pc_id,idtext) 
+      values 
+             (#{no},#{idtype},#{idpic},#{name},#{date1},#{pc_id},#{idtext})
+    </insert>    
+     
+    <select id="getIdsBySysExtraid" resultType = "int" timeout="5">    
+      select id from sys_extraid where cat ='IDS'
+    </select>
+    
+    <update id="updateIDS" parameterType = "int" timeout="5">    
+      update sys_extraid set id=#{id} where cat='IDS'
+    </update>
+    
+    
+    <!-- 插入   -->   
+    <insert id="insertIdScan_ga" parameterType="IdScan_ga" timeout="5">    
+      insert into idscan_ga
+             (id,roomno,guesttype,name,name2,sex,birthday,race,country,nation,
+              address,prv,idtype,idcode,scantime,date1,date2,date3,done,no) 
+      values 
+             (#{id},#{roomno},#{guesttype},#{name},#{name2},#{sex},#{birthday},#{race},#{country},#{nation},
+             #{address},#{prv},#{idtype},#{idcode},#{scantime},#{date1},#{date2},#{date3},#{done},#{no})
+    </insert>   
+    
+    <!-- 调用sybase的存储过程 -->
+    <select id="afterUpdate"  statementType="CALLABLE" parameterType = "String" >    
+        <![CDATA[{call p_hxm_gong_an_process (#{id,mode=IN,jdbcType=VARCHAR})}]]>
+    </select>
+    
+    <!-- 调用sybase的存储过程,将p_hxm_gong_an_process过程设置为anymode -->
+    <select id="updateProMode"  statementType="CALLABLE" >    
+        <![CDATA[{call sp_procxmode ('p_hxm_gong_an_process','anymode')}]]>
+    </select>
+    
+    <!-- 第二种调用存储过程的方法，parameterMap = "updateIdScangaById" 
+         <![CDATA[{call p_hxm_gong_an_process (?)}]]>
+    <parameterMap type="java.util.Map" id="updateIdScangaById">
+         <parameter property="id" mode="IN" jdbcType="VARCHAR"/>
+    </parameterMap>
+      -->
+    
+ </mapper>

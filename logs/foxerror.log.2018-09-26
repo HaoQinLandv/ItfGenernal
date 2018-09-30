@@ -1,0 +1,645 @@
+2018-09-26 11:32:04,241 [ERROR] com.foxhis.itf.main.Main.main(Main.java:102) - 连接数据库失败或者加载police实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource dbsybase.properties
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:89)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource dbsybase.properties
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: java.io.IOException: Could not find resource dbsybase.properties
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.io.Resources.getResourceAsProperties(Resources.java:128)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.propertiesElement(XMLConfigBuilder.java:225)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:106)
+	... 4 more
+2018-09-26 11:32:30,084 [ INFO] com.foxhis.itf.main.Main$5.actionPerformed(Main.java:150) - 服务已正常退出..
+2018-09-26 11:33:20,588 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 11:33:20,597 [ERROR] com.foxhis.itf.main.Main.main(Main.java:102) - 连接数据库失败或者加载police实例失败
+java.lang.Exception: 获取ipoliceHandler为空
+	at com.foxhis.itf.main.Utils.getInstance(Utils.java:58)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+2018-09-26 11:34:27,287 [ INFO] com.foxhis.itf.main.Main$5.actionPerformed(Main.java:150) - 服务已正常退出..
+2018-09-26 11:34:33,386 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 11:34:33,403 [ERROR] com.foxhis.itf.main.Main.main(Main.java:102) - 连接数据库失败或者加载police实例失败
+java.lang.Exception: 获取ipoliceHandler为空
+	at com.foxhis.itf.main.Utils.getInstance(Utils.java:58)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+2018-09-26 11:36:04,293 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 11:36:04,304 [ERROR] com.foxhis.itf.main.Main.main(Main.java:102) - 连接数据库失败或者加载police实例失败
+java.lang.Exception: 获取ipoliceHandler为空
+	at com.foxhis.itf.main.Utils.getInstance(Utils.java:58)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+2018-09-26 11:38:18,673 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 11:38:18,687 [ INFO] com.foxhis.itf.main.Main.main(Main.java:97) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 11:38:18,701 [ERROR] com.foxhis.itf.genernal.PoliceGeneral.run(PoliceGeneral.java:120) - 轮询异常：java.lang.NullPointerException
+2018-09-26 11:38:20,686 [ERROR] com.foxhis.itf.genernal.PoliceGeneral.run(PoliceGeneral.java:120) - 轮询异常：java.lang.NullPointerException
+2018-09-26 11:39:44,552 [ INFO] com.foxhis.itf.main.Main.main(Main.java:89) - 连接数据库成功
+2018-09-26 11:39:44,564 [ INFO] com.foxhis.itf.main.Main.main(Main.java:96) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 11:39:44,575 [ERROR] com.foxhis.itf.genernal.PoliceGeneral.run(PoliceGeneral.java:120) - 轮询异常：java.lang.NullPointerException
+2018-09-26 11:39:46,563 [ERROR] com.foxhis.itf.genernal.PoliceGeneral.run(PoliceGeneral.java:120) - 轮询异常：java.lang.NullPointerException
+2018-09-26 11:44:33,609 [ERROR] com.foxhis.itf.main.Main.main(Main.java:101) - 连接数据库失败或者加载police实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'IdScan'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.foxhis.itf.model.police.IdScan
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:88)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'IdScan'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.foxhis.itf.model.police.IdScan
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'IdScan'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.foxhis.itf.model.police.IdScan
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:171)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:109)
+	... 4 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.foxhis.itf.model.police.IdScan
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:164)
+	... 5 more
+2018-09-26 11:46:04,163 [ERROR] com.foxhis.itf.main.Main.main(Main.java:101) - 连接数据库失败或者加载police实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/model/police/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/foxhis/itf/model/police/IdScan.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:88)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/foxhis/itf/model/police/IdScan.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: java.io.IOException: Could not find resource com/foxhis/itf/model/police/IdScan.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+2018-09-26 11:46:34,825 [ INFO] com.foxhis.itf.main.Main.main(Main.java:89) - 连接数据库成功
+2018-09-26 11:46:34,836 [ INFO] com.foxhis.itf.main.Main.main(Main.java:96) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 11:46:34,852 [ERROR] com.foxhis.itf.genernal.PoliceGeneral.run(PoliceGeneral.java:120) - 轮询异常：java.lang.NullPointerException
+2018-09-26 11:46:36,836 [ERROR] com.foxhis.itf.genernal.PoliceGeneral.run(PoliceGeneral.java:120) - 轮询异常：java.lang.NullPointerException
+2018-09-26 13:18:10,519 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 13:18:10,552 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 13:18:10,561 [ERROR] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:98) - 轮询异常：org.apache.ibatis.binding.BindingException: Type interface com.foxhis.itf.vod.mapper.IVod_GrdMapper is not known to the MapperRegistry.
+2018-09-26 13:18:12,550 [ERROR] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:98) - 轮询异常：org.apache.ibatis.binding.BindingException: Type interface com.foxhis.itf.vod.mapper.IVod_GrdMapper is not known to the MapperRegistry.
+2018-09-26 13:18:14,550 [ERROR] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:98) - 轮询异常：org.apache.ibatis.binding.BindingException: Type interface com.foxhis.itf.vod.mapper.IVod_GrdMapper is not known to the MapperRegistry.
+2018-09-26 13:18:16,549 [ERROR] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:98) - 轮询异常：org.apache.ibatis.binding.BindingException: Type interface com.foxhis.itf.vod.mapper.IVod_GrdMapper is not known to the MapperRegistry.
+2018-09-26 13:18:18,551 [ERROR] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:98) - 轮询异常：org.apache.ibatis.binding.BindingException: Type interface com.foxhis.itf.vod.mapper.IVod_GrdMapper is not known to the MapperRegistry.
+2018-09-26 13:18:51,660 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 13:18:51,670 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 13:19:27,692 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 13:19:27,705 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 13:19:27,942 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:67) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-26 13:19:27,946 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:89) - 更新状态是否成功:true
+2018-09-26 13:19:29,708 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:67) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-26 13:19:29,710 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:89) - 更新状态是否成功:true
+2018-09-26 13:19:31,710 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:67) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-26 13:19:31,712 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:89) - 更新状态是否成功:true
+2018-09-26 14:00:15,327 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 14:00:15,334 [ERROR] com.foxhis.itf.main.Main.main(Main.java:104) - 连接数据库失败或者加载police实例失败
+java.lang.NullPointerException
+	at java.util.concurrent.ScheduledThreadPoolExecutor.scheduleAtFixedRate(ScheduledThreadPoolExecutor.java:563)
+	at com.foxhis.itf.main.Main.main(Main.java:98)
+2018-09-26 14:00:54,096 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 14:00:54,102 [ERROR] com.foxhis.itf.main.Main.main(Main.java:105) - 连接数据库失败或者加载police实例失败
+java.lang.NullPointerException
+	at com.foxhis.itf.main.Main.main(Main.java:98)
+2018-09-26 14:01:13,116 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 14:03:38,996 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 14:03:39,021 [ INFO] com.foxhis.itf.main.Main.main(Main.java:102) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:03:39,031 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:126) - 轮询异常：java.lang.NullPointerException
+2018-09-26 14:03:41,021 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:126) - 轮询异常：java.lang.NullPointerException
+2018-09-26 14:04:00,225 [ INFO] com.foxhis.itf.main.Main.main(Main.java:90) - 连接数据库成功
+2018-09-26 14:04:00,235 [ INFO] com.foxhis.itf.main.Main.main(Main.java:102) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:04:00,438 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:74) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-26 14:04:00,442 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:96) - 更新状态是否成功:true
+2018-09-26 14:04:02,240 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:74) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-26 14:04:02,242 [ INFO] com.foxhis.itf.genernal.VODGenernal.run(VODGenernal.java:96) - 更新状态是否成功:true
+2018-09-26 14:20:51,898 [ INFO] com.foxhis.itf.main.Main.main(Main.java:96) - 连接数据库成功
+2018-09-26 14:20:51,908 [ INFO] com.foxhis.itf.main.Main.main(Main.java:113) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:20:51,917 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:126) - 轮询异常：java.lang.NullPointerException
+2018-09-26 14:20:53,908 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:126) - 轮询异常：java.lang.NullPointerException
+2018-09-26 14:20:55,908 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:126) - 轮询异常：java.lang.NullPointerException
+2018-09-26 14:30:53,583 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:30:53,594 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载police实例失败
+java.lang.Exception: 获取ismsHandler为空
+	at com.foxhis.itf.main.Utils.getSMSInstance(Utils.java:92)
+	at com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:38)
+	at com.foxhis.itf.main.Main.main(Main.java:110)
+2018-09-26 14:31:56,127 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:31:56,737 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:45) - 更新过期数据...
+2018-09-26 14:31:56,739 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:31:56,848 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:31:56,852 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:31:58,744 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:31:58,744 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:32:00,743 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:32:00,744 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:32:02,743 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:32:02,743 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:32:04,744 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:32:04,744 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:32:06,742 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:32:06,742 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:32:07,921 [ INFO] com.foxhis.itf.main.Main$5.actionPerformed(Main.java:181) - 当前短信余额为：1204
+2018-09-26 14:32:08,742 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:32:08,743 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:41:21,725 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:41:21,872 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:45) - 更新过期数据...
+2018-09-26 14:41:21,875 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:41:21,894 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:41:21,903 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:41:23,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:41:23,879 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:41:25,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:41:25,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:41:27,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:41:27,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:41:28,188 [ INFO] com.foxhis.itf.main.Main$5.actionPerformed(Main.java:181) - 当前短信余额为：1204
+2018-09-26 14:42:42,886 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:42:43,050 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:45) - 更新过期数据...
+2018-09-26 14:42:43,052 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:42:43,073 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:42:43,081 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:42:45,057 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴与支持！即日起至11.30入住豪华间即专享感恩惠员价。预订电话:400-826-3911.胡向明hxm童青
+2018-09-26 14:42:45,057 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:43:08,531 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:43:08,667 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:45) - 更新过期数据...
+2018-09-26 14:43:08,670 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:43:08,691 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:43:08,694 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:43:08,694 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:43:08,694 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:43:08,695 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:43:10,673 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:43:10,673 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:43:10,673 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:43:10,673 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:43:10,674 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:155) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:48,925 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:44:49,064 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:45) - 更新过期数据...
+2018-09-26 14:44:49,066 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:44:49,087 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:44:49,098 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:49,098 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:44:49,098 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:49,099 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:44:49,099 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:49,099 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:44:49,099 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:49,099 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:51,069 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:44:51,069 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:51,069 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:44:51,069 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:51,071 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:44:51,071 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:51,072 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:44:51,072 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:44:51,072 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:12,680 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 14:45:12,835 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.initialize(SMS_Genernal.java:45) - 更新过期数据...
+2018-09-26 14:45:12,838 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 14:45:12,874 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:12,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:12,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:12,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:12,878 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:12,879 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:12,879 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:12,879 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:12,879 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:14,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:14,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:14,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:14,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:14,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:14,844 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:14,844 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:14,844 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:14,844 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:16,840 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:16,840 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:16,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:18,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:18,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:18,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:18,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:18,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:18,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:18,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:18,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:18,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:20,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:20,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:22,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:22,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:22,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:24,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:24,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:26,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:26,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:28,840 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:28,840 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:28,840 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:28,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:28,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:28,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:28,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:28,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:28,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:30,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:30,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:30,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:30,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:30,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:30,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:30,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:30,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:30,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:31,896 [ INFO] com.foxhis.itf.main.Main$5.actionPerformed(Main.java:181) - 当前短信余额为：1204
+2018-09-26 14:45:32,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:32,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:32,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:32,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:32,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:32,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:32,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:32,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:32,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:34,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:36,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:36,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:36,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:36,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:36,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:36,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:36,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:36,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:36,843 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:38,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:会员感恩周！杭州大厦宾馆感谢您的一路陪伴
+2018-09-26 14:45:38,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:38,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:与支持！即日起至11.30入住豪华间即专
+2018-09-26 14:45:38,841 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:38,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:享感恩惠员价。预订电话:400-826-
+2018-09-26 14:45:38,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:38,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:144) - 发送内容:3911.胡向明hxm童青
+2018-09-26 14:45:38,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:148) - 返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:38,842 [ INFO] com.foxhis.itf.genernal.SMS_Genernal.run(SMS_Genernal.java:156) - 最后返回结果:{result=true, msg=成功信息gbkhhh}
+2018-09-26 14:45:39,373 [ INFO] com.foxhis.itf.main.Main$6.actionPerformed(Main.java:206) - 服务已正常退出..
+2018-09-26 16:19:59,907 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:20:11,724 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:20:21,025 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call proc p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:21:32,299 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:21:32,310 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:21:32,486 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call  p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:21:34,311 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call  p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:23:21,981 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:23:21,991 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:23:22,177 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           exec  p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:23:23,993 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           exec  p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:25:09,615 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:25:09,626 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:25:09,799 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call  p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:25:11,627 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call  p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:29:47,542 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:29:47,553 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:29:47,877 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:29:49,554 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:30:28,837 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:30:28,848 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:30:29,047 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate
+### The error occurred while executing a query
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:30:30,850 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate
+### The error occurred while executing a query
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:32:28,184 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:32:28,194 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:32:28,404 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:37:07,160 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:37:07,171 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:37:07,386 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:37:09,172 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:39:16,064 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 16:39:16,078 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 16:39:16,746 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:39:18,132 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:127) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 16:47:51,158 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 8 more
+2018-09-26 16:48:16,219 [ INFO] com.foxhis.itf.main.Main$6.actionPerformed(Main.java:206) - 服务已正常退出..
+2018-09-26 16:48:23,269 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 8 more
+2018-09-26 16:49:21,826 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 8 more
+2018-09-26 16:52:24,121 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 60; 必须声明元素类型 "parameterType"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 8 more
+2018-09-26 17:02:46,129 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 17:02:46,140 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 17:02:46,335 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate
+### The error occurred while executing a query
+### SQL: >            {call p_hxm_gong_an_process ?}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:02:48,142 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate
+### The error occurred while executing a query
+### SQL: >            {call p_hxm_gong_an_process ?}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:03:09,888 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 17:03:09,898 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 17:03:10,121 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >            {call p_hxm_gong_an_process ?}
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:03:54,622 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 17:03:54,632 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 17:03:54,841 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:03:56,634 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:06:07,781 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 17:06:07,792 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 17:06:07,986 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:06:09,793 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:06:59,918 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-26 17:06:59,932 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-26 17:07:00,151 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-26 17:07:01,933 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >           call p_hxm_gong_an_process ?
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.

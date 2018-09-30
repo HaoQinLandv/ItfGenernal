@@ -1,0 +1,50 @@
+2018-09-28 11:44:37,872 [ERROR] com.foxhis.itf.main.Main.main(Main.java:126) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource dbsybase.properties
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:72)
+	at com.foxhis.itf.main.Main.main(Main.java:97)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource dbsybase.properties
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: java.io.IOException: Could not find resource dbsybase.properties
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.io.Resources.getResourceAsProperties(Resources.java:128)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.propertiesElement(XMLConfigBuilder.java:225)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:106)
+	... 4 more
+2018-09-28 11:49:00,002 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 连接数据库成功
+2018-09-28 11:49:00,048 [ INFO] com.foxhis.itf.main.Main.main(Main.java:116) - 打开循环调度器成功,循环时间为:2秒
+2018-09-28 11:49:00,063 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-28 11:49:02,047 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-28 11:49:04,049 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-28 11:49:54,470 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 连接数据库成功
+2018-09-28 11:49:54,502 [ INFO] com.foxhis.itf.main.Main.main(Main.java:116) - 打开循环调度器成功,循环时间为:2秒
+2018-09-28 11:50:29,005 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 连接数据库成功
+2018-09-28 11:50:29,015 [ INFO] com.foxhis.itf.main.Main.main(Main.java:116) - 打开循环调度器成功,循环时间为:2秒
+2018-09-28 11:50:29,248 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 11:50:29,348 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true
+2018-09-28 11:50:31,019 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 11:50:31,021 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true
+2018-09-28 13:15:12,228 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 连接数据库成功
+2018-09-28 13:15:12,276 [ INFO] com.foxhis.itf.main.Main.main(Main.java:116) - 打开循环调度器成功,循环时间为:2秒
+2018-09-28 13:15:12,596 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 13:15:12,607 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true
+2018-09-28 13:15:14,278 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 13:15:14,280 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true
+2018-09-28 13:19:17,182 [ INFO] com.foxhis.itf.main.Main.main(Main.java:98) - 连接数据库成功
+2018-09-28 13:19:17,192 [ INFO] com.foxhis.itf.main.Main.main(Main.java:116) - 打开循环调度器成功,循环时间为:2秒
+2018-09-28 13:19:17,411 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 13:19:17,432 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true
+2018-09-28 13:20:42,642 [ INFO] com.foxhis.itf.main.Main.main(Main.java:97) - 连接数据库成功
+2018-09-28 13:20:42,652 [ INFO] com.foxhis.itf.main.Main.main(Main.java:115) - 打开循环调度器成功,循环时间为:2秒
+2018-09-28 13:20:42,866 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 13:20:42,873 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true
+2018-09-28 13:20:44,657 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:92) - 获取的vodgrd记录：{date=Tue Feb 27 04:30:26 CST 2018, box_addr=F18B230001, ograde=null, roomno=0402 , obox_addr=1, gst_name=PMS, grade=0, shift=1, logmark=0, empno=PMS       , gst_grd=1, changed=T}
+2018-09-28 13:20:44,658 [ INFO] com.foxhis.itf.genernal.VODGenernal.doTask(VODGenernal.java:114) - 更新状态是否成功:true

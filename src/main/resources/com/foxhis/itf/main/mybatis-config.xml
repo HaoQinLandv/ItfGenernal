@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 这是根标签 ,必须按照顺序来，properties，settings，typeAliases-->
+<configuration>
+	<!-- 元素允许在主配置文件之外提供一个properties格式对应文件，从而使得主配置文件更加通用。这样对部署非常有用 
+	  如果需要在包外配置数据库参数，则，properties可以不用配置，直接在sqlSessionFactory.build(inputStream,properties)，中的properties生成
+	<properties resource="dbsybase.properties" />-->
+	<!-- 设置别名，一定要放在properties下面  
+	
+	<settings>
+		<setting name="defaultStatementTimeout" value="${timeout}" />
+	</settings>
+	-->
+	<typeAliases>
+		<typeAlias alias="IdScan"       type="com.foxhis.itf.police.model.IdScan" />
+		<typeAlias alias="IdScan_ga"    type="com.foxhis.itf.police.model.IdScan_ga" />
+		<typeAlias alias="Sys_extraid"  type="com.foxhis.itf.police.model.Sys_extraid" />
+		<typeAlias alias="vod_grd"      type="com.foxhis.itf.vod.model.Vod_Grd" />
+		<typeAlias alias="Message_Send" type="com.foxhis.itf.sms.model.Message_Send" />
+		<typeAlias alias="SM_Sendplus"  type="com.foxhis.itf.sms.model.SM_Sendplus" />
+	</typeAliases>
+
+
+	<!-- 配置数据源相关的信息 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 列出映射文件 -->
+	<mappers>
+		<mapper resource="com/foxhis/itf/police/model/IdScan.xml" />
+		<mapper resource="com/foxhis/itf/vod/model/Vod_Grd.xml" />
+		<mapper resource="com/foxhis/itf/sms/model/Message_Send.xml" />
+	</mappers>
+</configuration>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+ <mapper namespace="com.foxhis.itf.sms.mapper.IMessage_SendMapper">  
+    
+    <resultMap type="Message_Send" id="resultMSMap">
+        <id property="sendid" column="sendid"/>
+		<result property="shortmsgno" column="shortmsgno" />
+		<result property="sendstate" column="sendstate" />
+		<result property="shortmsgbody" column="shortmsgbody" />
+		<result property="sendid" column="sendid" />
+		<result property="sender" column="sender" />
+		<result property="requesttime" column="requesttime" />
+		
+		<association  property="sm_sendplus" javaType="SM_Sendplus">
+			<id property="sendid" column="sendid" />  
+            <result property="shortmsgbody1" column="shortmsgbody1"/>
+            <result property="shortmsgbody2" column="shortmsgbody2"/>
+            <result property="shortmsgbody3" column="shortmsgbody3"/>
+            <result property="shortmsgbody4" column="shortmsgbody4"/>
+            <result property="shortmsgbody5" column="shortmsgbody5"/>
+		</association >
+	</resultMap>
+	
+     <!-- 查找未发送的短信 -->  
+     <select id="getMs_SendBySta"  resultMap="resultMSMap" timeout="5">  
+       select  a.shortmsgno,
+         a.shortmsgbody,   
+         a.sendstate,   
+         a.sendtime,   
+         a.sendid,   
+         a.sender,   
+         a.requesttime,
+         b.* 
+      from sm_send a,sm_sendplus b
+      where a.sendstate in (1,2,3,4,5) and a.sendid*=b.sendid
+     </select>  
+           
+    <!-- 修改    -->   
+    <update id="updateMs_Send" parameterType="Message_Send" timeout="5">    
+       update sm_send set sendstate=#{sendstate},finishtime = getdate(),resultdescrib=#{resultdescrib} where sendid= #{sendid} 
+    </update>    
+     
+     
+     <!-- 修改老的数据  
+             原符号       <        <=      >       >=       &        '        "
+           替换符号    &lt;    &lt;=   &gt;    &gt;=   &amp;   &apos;  &quot; 
+     --> 
+    <update id="updateOldMsg" timeout="5">    
+      update sm_send set sendstate = -3 where timelimit &lt; getdate() and sendstate in (1,2,3,4)
+    </update>    
+        
+ </mapper>

@@ -1,0 +1,428 @@
+2018-09-27 09:13:58,843 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:373)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 7 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 13 more
+2018-09-27 09:16:02,722 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:373)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 7 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'getUserCountMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: getUserCountMap
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 13 more
+2018-09-27 09:17:45,213 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:17:45,241 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:17:45,876 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >                      call p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-27 09:17:47,243 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### SQL: >                      call p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-27 09:19:08,025 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:19:08,036 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:19:08,320 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate
+### The error occurred while executing a query
+### SQL: >                      call p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-27 09:19:10,036 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate
+### The error occurred while executing a query
+### SQL: >                      call p_hxm_gong_an_process(?)
+### Cause: java.sql.SQLException: Invalid JDBC call escape at line position 6.
+2018-09-27 09:21:10,168 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:21:10,179 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:21:10,405 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:21:12,179 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:24:52,047 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:24:52,057 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:24:52,363 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:24:54,058 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:27:06,962 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:27:06,973 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:27:07,398 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.String, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process ?
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.String, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:27:08,975 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.String, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process ?
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.String, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:29:33,114 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:29:33,129 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:29:33,349 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.String, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process (?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.String, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:33:47,129 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:33:47,140 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:33:47,446 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect syntax near '?'.
+
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process (?)
+### Cause: java.sql.SQLException: Incorrect syntax near '?'.
+
+2018-09-27 09:33:49,141 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect syntax near '?'.
+
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process (?)
+### Cause: java.sql.SQLException: Incorrect syntax near '?'.
+
+2018-09-27 09:36:09,776 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:36:09,786 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:36:09,991 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:38:24,097 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:38:24,109 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:38:24,303 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:38:26,112 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:40:02,686 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:40:02,697 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:40:02,877 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:41:14,424 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:41:14,435 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:41:14,817 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 09:44:02,428 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 116; 必须为元素类型 "update" 声明属性 "resultType"。
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 116; 必须为元素类型 "update" 声明属性 "resultType"。
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 116; 必须为元素类型 "update" 声明属性 "resultType"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 116; 必须为元素类型 "update" 声明属性 "resultType"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(XMLDTDValidator.java:1253)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1917)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 8 more
+2018-09-27 09:44:26,763 [ERROR] com.foxhis.itf.main.Main.main(Main.java:122) - 连接数据库失败或者加载实例失败
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 106; 必须为元素类型 "update" 声明属性 "resultType"。
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.foxhis.itf.main.Main.main(Main.java:93)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 106; 必须为元素类型 "update" 声明属性 "resultType"。
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	... 2 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 106; 必须为元素类型 "update" 声明属性 "resultType"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 106; 必须为元素类型 "update" 声明属性 "resultType"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(XMLDTDValidator.java:1253)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1917)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 8 more
+2018-09-27 09:44:54,316 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 09:44:54,327 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 09:44:54,748 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process(?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 10:11:58,264 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:11:58,306 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:11:58,629 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: {          call p_hxm_gong_an_process(?)         }
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+2018-09-27 10:13:22,722 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:13:22,734 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:13:22,948 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+2018-09-27 10:16:58,581 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:16:58,592 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:16:58,804 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+2018-09-27 10:17:19,678 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:17:19,690 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:17:19,950 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process (?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 10:17:21,691 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: call p_hxm_gong_an_process (?)
+### Cause: org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='id', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Invalid parameter index 1.
+2018-09-27 10:18:48,551 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:18:48,563 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:18:48,762 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.getUserCountMap
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+2018-09-27 10:21:02,946 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:21:02,958 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:21:04,006 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：java.lang.NullPointerException
+2018-09-27 10:21:04,962 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：java.lang.NullPointerException
+2018-09-27 10:23:02,760 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 10:23:02,771 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 10:23:03,005 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：java.lang.NullPointerException
+2018-09-27 10:23:04,775 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：java.lang.NullPointerException
+2018-09-27 13:26:45,467 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 13:26:45,498 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 13:26:45,855 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Parameter #1 has not been set.
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Parameter #1 has not been set.
+2018-09-27 13:27:38,802 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 13:27:38,814 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 13:27:39,197 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：java.lang.NullPointerException
+2018-09-27 13:27:40,817 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:130) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:41:23,642 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:41:23,676 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:41:24,148 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:41:25,681 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:41:59,316 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:41:59,326 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:41:59,529 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:42:51,491 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:42:51,501 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:42:51,770 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+2018-09-27 15:43:02,277 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:43:02,290 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:43:02,515 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:43:04,295 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:43:13,483 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:43:13,493 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:43:13,696 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:43:15,498 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:43:48,596 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:43:48,606 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:43:48,792 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:43:50,609 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：java.lang.NullPointerException
+2018-09-27 15:44:08,357 [ INFO] com.foxhis.itf.main.Main.main(Main.java:94) - 连接数据库成功
+2018-09-27 15:44:08,368 [ INFO] com.foxhis.itf.main.Main.main(Main.java:112) - 打开循环调度器成功,循环时间为:2秒
+2018-09-27 15:44:08,580 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+2018-09-27 15:44:10,371 [ERROR] com.foxhis.itf.genernal.PoliceGenernal.run(PoliceGenernal.java:54) - 轮询异常：org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
+### The error may exist in com/foxhis/itf/police/model/IdScan.xml
+### The error may involve com.foxhis.itf.police.mapper.IIdScanMapper.afterUpdate-Inline
+### The error occurred while setting parameters
+### SQL: {call p_hxm_gong_an_process (?)}
+### Cause: java.sql.SQLException: Stored procedure 'p_hxm_gong_an_process' may be run only in unchained transaction mode. The 'SET CHAINED OFF' command will cause the current session to use unchained transaction mode.
+
