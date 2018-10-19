@@ -57,11 +57,11 @@
 			<artifactId>VOD_LeShi</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.foxhis.itf</groupId>
 			<artifactId>FeiGaoSMS</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
 		
 		
 		

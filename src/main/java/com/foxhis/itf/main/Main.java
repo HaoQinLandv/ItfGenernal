@@ -51,6 +51,7 @@ public class Main {
 	private static ScheduledExecutorService  scheduledpools;
 	private static SqlSessionFactory sqlSessionFactory ;
 	private static LogDialog logDemoFrame;
+	private static LogFrame logFrame;
 	private static final String SEVNAME = "通用";
 	private static String handler;
 
@@ -124,8 +125,12 @@ public class Main {
 			e.printStackTrace();
 			LOGGER.error("连接数据库失败或者加载实例失败",e);
 		}
-		logDemoFrame = new LogDialog();  
-		logDemoFrame.initLog();  
+		/*logDemoFrame = new LogDialog();  
+		logDemoFrame.initLog();  */
+		logFrame = new LogFrame();
+		logFrame.initLog();
+		//logFrame.frame.setVisible(true);
+		
 
 		EventQueue.invokeLater(new Runnable() {
 
@@ -156,7 +161,14 @@ public class Main {
 		logItem.addActionListener(new ActionListener() {		
 			public void actionPerformed(ActionEvent e) {
 
-				logDemoFrame.setVisible(true); 
+//				logDemoFrame.setVisible(true); 
+				logFrame.frame.setVisible(true);
+				if(!logFrame.rthread.isFlg())
+				{
+					logFrame.rthread.setFlg(true);
+					logFrame.rthread.start();
+				}
+				
 			}
 		});
 		popupMenu.add(logItem);

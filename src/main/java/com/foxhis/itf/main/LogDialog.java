@@ -30,7 +30,7 @@ public class LogDialog extends JFrame{
 		initComponents();
 	}
 	private void initComponents() {
-	    setTitle("日志窗口");
+	    this.setTitle("日志窗口");
         logScrollPane = new JScrollPane();  
         logTextArea = new JTextArea();  
         setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);  
@@ -40,7 +40,7 @@ public class LogDialog extends JFrame{
         logScrollPane.setViewportView(logTextArea);  
   
         GroupLayout layout = new GroupLayout(getContentPane());  
-        getContentPane().setLayout(layout);  
+        this.getContentPane().setLayout(layout);  
         layout.setHorizontalGroup(  
                 layout.createParallelGroup(Alignment.LEADING).addGroup(layout.createSequentialGroup().addContainerGap()).addComponent(logScrollPane, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE,(int)dim.getWidth()/2+200, Short.MAX_VALUE));  
         layout.setVerticalGroup(  
