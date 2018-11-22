@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="com.foxhis.itf.doorcard.mapper.IDooCard_ReqMapper">
+
+   <select id="getDoorCard_ReqBySta"  resultType = "DoorCard_Req"   timeout="5">    
+      select * doorcard_req from  where sta =#{0} and pc_id=#{1}
+   </select>
+
+   <update id="updateWriteData" parameterType="DoorCard_Req" timeout="5">
+      update doorcard_req set remark=#{remark},sta=#{sta} where id=#{id}
+   </update>
+
+   <update id="updateReadData" parameterType="DoorCard_Req" timeout="5">
+      update doorcard_req set remark=#{remark},sta=#{sta},arr=#{arr},dep=#{dep},flag4=#{flag4} where id=#{id}
+   </update>
+   
+   <update id="updateEraseData" parameterType="DoorCard_Req" timeout="5">
+      update doorcard_req set remark=#{remark},sta=#{sta} where id=#{id}
+   </update>
+
+
+</mapper>

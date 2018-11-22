@@ -52,7 +52,7 @@ public class Main {
 	private static SqlSessionFactory sqlSessionFactory ;
 	private static LogDialog logDemoFrame;
 	private static LogFrame logFrame;
-	private static final String SEVNAME = "通用";
+	private static final String SEVNAME = "门锁";
 	private static String handler;
 
 	public static void main(String[] args) {
@@ -98,12 +98,16 @@ public class Main {
 			LOGGER.info("连接数据库成功");
 			//启动任务调度
 			scheduledpools = Executors.newScheduledThreadPool(1);
-
+            //轮询时长
 			String runtime = properties.getProperty("time");
+			//接口类型句柄
 			String itfhandler = properties.getProperty("handler");
 			handler = itfhandler;
+			//公安输出的路径
 			String path = properties.getProperty("path");
+			//短信用的发送长度间隔
 			int length = parseInt(properties.getProperty("length"));
+			
 			input.put("handler", itfhandler);
 			input.put("path", path);
 			input.put("length", length);

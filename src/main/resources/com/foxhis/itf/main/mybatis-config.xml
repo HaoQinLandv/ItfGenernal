@@ -19,6 +19,7 @@
 		<typeAlias alias="vod_grd"      type="com.foxhis.itf.vod.model.Vod_Grd" />
 		<typeAlias alias="Message_Send" type="com.foxhis.itf.sms.model.Message_Send" />
 		<typeAlias alias="SM_Sendplus"  type="com.foxhis.itf.sms.model.SM_Sendplus" />
+		<typeAlias alias="DoorCard_Req" type="com.foxhis.itf.doorcard.model.DoorCard_Req">
 	</typeAliases>
 
 
@@ -39,5 +40,6 @@
 		<mapper resource="com/foxhis/itf/police/model/IdScan.xml" />
 		<mapper resource="com/foxhis/itf/vod/model/Vod_Grd.xml" />
 		<mapper resource="com/foxhis/itf/sms/model/Message_Send.xml" />
+		<mapper resource="com/foxhis/itf/doorcard/model/DoorCard_Req.xml" />
 	</mappers>
 </configuration>

@@ -44,8 +44,6 @@ public class PoliceGenernal implements IGenCommon{
 	
 	}
 
-
-
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
